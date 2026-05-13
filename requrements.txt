@@ -1,0 +1,34 @@
+# AttackGPT Dependencies
+# Install with: pip install -r requirements.txt
+
+# Core dependencies
+requests>=2.31.0
+flask>=3.0.0
+
+# LLM Providers
+ollama>=0.1.0           # For local models (Qwen, Llama, etc.)
+boto3>=1.34.0           # Optional: AWS Bedrock (if using Bedrock instead of Anthropic API)
+
+# Standard library (no installation needed)
+# json, time, uuid, os, sys, threading, logging, re, base64, subprocess
+
+# =============================================================================
+# OLLAMA SETUP (for local models like Qwen)
+# =============================================================================
+# If using Ollama for local models, follow these steps:
+#
+# 1. Install Ollama: https://ollama.ai/download
+#
+# 2. Start Ollama service:
+#    ollama serve
+#
+# 3. Pull the model you want to use (must match tactics_config.py):
+#    ollama pull qwen2.5-coder:32b
+#
+# Common models for AttackGPT:
+#    - qwen2.5-coder:32b    (Recommended - best balance of quality/speed)
+#    - qwen2.5-coder:7b     (Faster but less reliable)
+#    - llama3.1:70b         (Alternative, slower)
+#
+# Note: Model names in tactics_config.py must match Ollama model names exactly.
+#       Use "ollama list" to see installed models.
