@@ -172,15 +172,3 @@ def get_template(tactic):
 def list_templates():
     """List all available tactic templates"""
     return list(TEMPLATE_REGISTRY.keys())
-
-
-if __name__ == "__main__":
-    # Quick test
-    print("Available Tactic Templates:")
-    print("=" * 60)
-    for tactic in TEMPLATE_REGISTRY.keys():
-        template = TEMPLATE_REGISTRY[tactic]
-        print(f"  {tactic.upper()}")
-        print(f"    Context: {template['context'][:60]}...")
-        print(f"    Requirements: {len(template['requirements'])} items")
-        print()
