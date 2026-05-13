@@ -132,20 +132,3 @@ def _validate_python_scripts(main_script, verification_script, tactic="script"):
     
     logger.info(f"[Sandbox] Python validation for {tactic} not yet implemented")
     return False, "Python validation not implemented"
-
-
-if __name__ == "__main__":
-    
-    test_main = """
-    Write-Host "Testing main script"
-    $testValue = 123
-    """
-
-    test_verify = """
-    Write-Host "Testing verification script"
-    exit 0
-    """
-
-    success, message = validate_scripts(test_main, test_verify, "PowerShell")
-    logger.info(f"\nTest Result: {success}")
-    logger.info(f"Message: {message}")
