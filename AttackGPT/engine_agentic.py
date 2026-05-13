@@ -914,7 +914,3 @@ def _parse_json_response(response):
 
 
 smart_generator = agentic_generator
-
-
-if __name__ == "__main__":
-    print("Agentic Engine loaded successfully")
