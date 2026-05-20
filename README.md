@@ -1,8 +1,8 @@
 # AttackGPT
 
-**Just-in-Time malware generation framework using LLM-driven adaptive payloads.**
+**Adversarial emulation framework using LLM-driven adaptive payloads.**
 
-AttackGPT demonstrates autonomous C2 frameworks that generate attack payloads on-demand using Large Language Models, adapting to each victim's environment in real-time. This is not made to be an operational C2 framework.
+AttackGPT provides security teams with a platform to safely evaluate enterprise endpoint and network controls against automated, on-demand code synthesis. Traditional script-based AI attacks suffer from severe code hallucinations and brittle semantic alignment; this framework introduces structural solutions to study how these techniques bypass traditional, static security baselines.
 
 ---
 
@@ -12,7 +12,7 @@ AttackGPT demonstrates autonomous C2 frameworks that generate attack payloads on
 
 Unauthorized access to computer systems is illegal. Users are solely responsible for obtaining proper authorization and complying with all applicable laws. Misuse may result in criminal prosecution.
 
-Intended use: Authorized penetration testing, red team exercises, security research in controlled environments.
+Intended use: AttackGPT is an open-source Adversarial Emulation Framework designed for security research, threat simulation, and behavioral telemetry generation. This tool allows Red Teams to simulate modern dynamic payload pipelines and assists Blue Teams in mapping out defensive gaps against Just-in-Time (JIT) in-memory code execution.
 
 ---
 
